@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			.con {
+				max-width: 800px;
+				min-height: 90vh;
+				background-color: gray;
+				margin: 5vh auto;
+				box-sizing: border-box;
+				padding: 20px;
+
+				/* centered last row */
+				/* display: flex;
+				flex-wrap: wrap;
+				justify-content: center; */
+				
+				/* flexible cells */
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+				gap: 1rem;
+			}
+			.box {
+				background-color: black;
+
+				/* centered last row */
+				/* flex: 0 0 calc(33.33% - 20px);
+				margin: 10px; */
+			}
+		</style>
+	</head>
+	<body>
+		<div class="con">
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+		</div>
+	</body>
+</html>
